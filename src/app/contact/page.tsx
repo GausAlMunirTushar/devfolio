@@ -7,7 +7,7 @@ import { SiLeetcode } from "react-icons/si";
 const ContactPage = () => {
     return (
         <section className="max-w-5xl mx-auto py-12">
-            <div className="w-full flex justify-between gap-10">
+            <div className="w-full sm:flex justify-between gap-10">
                 <div className="w-1/2">
                     <ContactForm />
                 </div>

@@ -1,6 +1,11 @@
 import skills from "@/data/skills"
 import SkillCard from "@/components/SkillCard"
 
+export const metadata = {
+    title: "Skills",
+    description: "",
+}
+
 const SkillsPage = () => {
     return (
         <div className="max-w-5xl mx-auto">

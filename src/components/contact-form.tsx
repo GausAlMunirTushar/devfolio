@@ -1,9 +1,19 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
+
 const ContactForm = () => {
+
+    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        const formData = new FormData(e.target as any);
+        console.log(formData);
+    }
+
     return (
         <form className="w-full">
             <div className='flex flex-col space-y-1'>
                 <label htmlFor="name">Name</label>
-                <input type="text" name='name' className='border border-gray-300 px-4 py-1' placeholder='Your Full Name' />
+                <input type="text" name='name' required className='border border-gray-300 px-4 py-1' placeholder='Your Full Name' />
             </div>
             <div className='flex flex-col space-y-1'>
                 <label htmlFor="email">Email</label>
